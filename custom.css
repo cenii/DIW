@@ -1,0 +1,39 @@
+header{
+    background-color: aqua;
+    height: 10vh;
+}
+nav{
+    background-color: chocolate;
+    height: 10vh;
+}
+aside{
+    background-color: gold;
+    height: 70vh;
+    width: 20%;
+    float: left;
+}
+section{
+    background-color: crimson;
+    height: 70vh;
+    width: 80%;
+    float: left;
+}
+.articulo1{
+    background-color: forestgreen;
+    height: 30vh;
+}
+.articulo2{
+    background-color: palevioletred;
+    height: 30vh;
+}
+footer{
+    background-color: blueviolet;
+    height: 10vh;
+    clear: both;
+}
+*{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-weight: bolder;
+}
