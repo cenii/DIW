@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'army_rust';
+    src: url(./fuentes/army_rust/ARMY\ RUST.ttf);
+}
 header{
     background-color: aqua;
     height: 10vh;
@@ -33,7 +37,7 @@ footer{
 }
 *{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'army_rust';
     margin: 0;
     font-weight: bolder;
 }
