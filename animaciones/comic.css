@@ -1,0 +1,67 @@
+.fila{
+    display: flex;
+}
+img{
+    padding: 6px;
+    width: 250px;
+}
+.comic{
+    display: inline-block;
+    background-color: red;
+}
+
+/*ANIMACIONES*/
+.fila .viñeta1 img:hover{
+width: 400px;
+transition: width 2s;
+}
+.fila .viñeta2 img:hover{
+    opacity: 0;
+    transition: opacity 2s;
+}
+.fila .viñeta3{
+    position: relative;
+}
+.fila .viñeta3 img{
+    position: absolute;
+    left:0;
+    transition: left ease-in 3s;
+}
+.fila .viñeta3 img:hover{
+    left: 600px;
+}
+.fila .viñeta4 img{
+    opacity: 1;
+    padding: 0;
+    width: 250px;
+    transition: all 3s;
+}
+.fila .viñeta4 img:hover{
+    padding: 100px;
+    width: 100px;
+    opacity: 0.5;
+}
+.fila .viñeta5 img{
+    -webkit-transition: 2s linear;
+    transition: 2s linear;
+}
+.fila .viñeta5 img:hover{
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+}
+.fila .viñeta6{
+    position: relative;
+}
+.fila .viñeta6 img{
+    position: relative;
+    left:0;
+    top:0;
+    transition: left ease-in 2s;
+    transition: top ease-out 2s;
+}
+.fila .viñeta6 img:hover{
+    left: 300px;
+}
+.fila .viñeta6 img:hover{
+    top: 300px;
+}
