@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="halloween.css">
+    <title>Halloween</title>
+    <script>
+        const hombreLobo = document.getElementsByClassName('hombreLobo')[0];
+        const loboAudio = document.getElementsByClassName('loboAudio')[0];
+    
+        hombreLobo.addEventListener('mouseover', () => {
+            loboAudio.play();
+        });
+    
+        hombreLobo.addEventListener('mouseleave', () => {
+            loboAudio.pause();
+            loboAudio.currentTime = 0;
+        });
+</script>
+</head>
+<body>
+    <div class="fondo">
+        <div class="conjuntoVampirico">
+        <img class="murcielago" src="./resources/murcielago.png">
+        <img class="vampiro" src="./resources/vampiro.png">
+        </div>
+        <div class="conjuntoZombie">
+            <img class="tierra" src="./resources/tierra.png">
+            <img class="zombie" src="./resources/zombie.png">
+        </div>
+        <div class="cruzYFuego">
+        <img class="cruz" src="./resources/cruz.png">
+        <img class="fuego" src="./resources/fuego.png">
+        </div>
+        <img class="luna" src="./resources/luna.png">
+        <img class="bruja" src="./resources/bruja.png">
+        <img class="araña" src="./resources/araña.png">
+        <div class="hombreLobo">
+        <img class="hombre" src="./resources/hombre.png">
+        <img class="lobo" src="./resources/lobo.png">
+        <audio class="loboAudio" src="./resources/loboAudio.mp3"></audio>
+        </div>
+    </div>
+</body>
+</html>

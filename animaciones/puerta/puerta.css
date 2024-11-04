@@ -1,0 +1,45 @@
+.casa{
+    position: relative;
+    background-image: url(../resources/casa.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+}
+body{
+    margin: 0;
+}
+.puertaCompleta{
+    position: absolute;
+    top: 425px;
+    left: 604px;
+    transition: left ease-in 2s;
+}
+.puertaCompleta:hover{
+    left: 520px;
+    
+}
+.barra{
+    position: relative;
+    width: 142px;
+    top: 425px;
+    left: 513px;
+}
+.puerta{
+    position: absolute;
+    width: 52px;
+    top: 20px;
+}
+.engancheL{
+    position: absolute;
+    width: 3px;
+    top: 10px;
+    left: 3px;
+}
+.engancheR{
+    position: absolute;
+    width: 3px;
+    top: 10px;
+    left: 48px;
+}

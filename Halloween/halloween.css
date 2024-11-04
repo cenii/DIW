@@ -1,0 +1,128 @@
+.fondo{
+    position: relative;
+    background-image: url(./resources/casaEmbrujada.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+.murcielago {
+    position: relative;
+    width: 75px;
+    top: 196px;
+    left: 190px;
+}
+.conjuntoVampirico{
+    position: absolute;
+}
+.vampiro {
+    position: relative;
+    width: 40px;
+    top: 260px;
+    left: 192px;
+    opacity: 0;
+    transition: all ease-in 0.3s;
+}
+.conjuntoVampirico:hover .vampiro{
+opacity: 1;
+top: 227px;
+}
+.conjuntoZombie{
+    position: absolute;
+}
+.tierra{
+    position: relative;
+    width: 70px;
+    top: 550px;
+    left: 780px;
+    
+}
+.zombie{
+    position:relative;
+    width: 70px;
+    top:550px;
+    left: 710px;
+    opacity: 0;
+    transition: all ease-out 1s;
+}
+.conjuntoZombie:hover .zombie{
+    opacity: 1;
+}
+.cruz{
+    position: relative;
+    width: 70px;
+    left: 462px;
+    top: 130px;
+    transition: all ease-in 1s;
+}
+.cruz:hover{
+    transform: rotate(180deg);
+}
+.cruz:hover ~ .fuego{
+    opacity: 1;
+}
+.fuego{
+    position: relative;
+    width: 20px;
+    top:73px;
+    left: 415px;
+    opacity: 0;
+    transition: opacity ease-in 1s;
+    transition-delay: 1s;
+}
+.luna{
+    position: relative;
+    width: 212px;
+    left: 610px;
+    top:140px;
+}
+.bruja{
+    position: relative;
+    width: 70px;
+    left: 1000px;
+    opacity: 0;
+    transition: all ease-in 1.5s;
+}
+.luna:hover ~ .bruja{
+    opacity: 1;
+    left: 0;
+    transform: rotate(360deg);
+}
+.araña{
+    position: relative;
+    width: 50px;
+    left: 850px;
+    top: -160px;
+    transition: all ease-in 2s;
+}
+.araña:hover{
+    left: 970px;
+    top: -10px;
+}
+.hombre{
+    position: relative;
+    width: 40px;
+    top: 400px;
+    left: 700px;
+    opacity: 1;
+    transition: all ease-in 1s;
+}
+.hombreLobo:hover .hombre{
+    opacity: 0;
+}
+.lobo{
+    position: relative;
+    width: 120px;
+    top: 400px;
+    left: 610px;
+    opacity: 0;
+    transition: all ease-in 1s;
+}
+.hombreLobo:hover .lobo{
+    opacity: 1;
+}
