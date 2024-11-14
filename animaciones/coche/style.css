@@ -13,19 +13,76 @@ body{
     height: 30%;
     width: 100%;
 }
-#coche{
+#conjuntoCoche #coche{
     position: absolute;
     top: 350px;
     left: 0;
     z-index: 1;
-    animation: mover 3s;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
-#coche img{
+#conjuntoCoche #coche img{
     width: 450px;
+    animation-name:tamaño;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
+#conjuntoCoche #humo{
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 1;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+#conjuntoCoche #coche img{
+    width: 450px;
+    animation-name:tamaño;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+
 @keyframes mover {
-    from{left:0;}
-    to{left:1000px;}
+    0%{
+        left:0;
+    }
+    38%{
+    rotate: 0deg;
+    top:350px;
+    }
+    40%{
+        top:300px;
+        left:300px;
+        rotate: -50deg;
+    }
+    80%{
+        top:100px;
+        rotate:20deg;
+    }
+    100%{
+        left: 1000px;
+        rotate: 40deg;
+    }
+}
+
+@keyframes tamaño {
+    0%{
+        width: 450px;
+    }
+    100%{
+        width: 200px;
+    }
 }
 #pilar1{
     position: absolute;
@@ -41,4 +98,22 @@ body{
     left: 460px;
     top: 80px;
     z-index: 1;
+}
+#escombros{
+    position: absolute;
+    left:540px;
+    top:380px;
+}
+#escombros img{
+    width: 200px;
+    transform: rotateY(180deg);
+}
+#casaBlanca{
+    position: absolute;
+    left:950px;
+    top:150px;
+    z-index: 1;
+}
+#casaBlanca img{
+    width: 500px; 
 }
