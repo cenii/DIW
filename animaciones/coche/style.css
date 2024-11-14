@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+#fondo{
+    background-color: deepskyblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#suelo{
+    background-color: forestgreen;
+    height: 30%;
+    width: 100%;
+}
+#coche{
+    position: absolute;
+    top: 350px;
+    left: 0;
+    z-index: 1;
+    animation: mover 3s;
+}
+#coche img{
+    width: 450px;
+}
+@keyframes mover {
+    from{left:0;}
+    to{left:1000px;}
+}
+#pilar1{
+    position: absolute;
+    width: 100px;
+    left:500px;
+    top:25px;
+    z-index: 0;
+}
+
+#pilar2{
+    position: absolute;
+    width: 100px;
+    left: 460px;
+    top: 80px;
+    z-index: 1;
+}
