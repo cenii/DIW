@@ -8,15 +8,29 @@
 </head>
 <body>
     <div id="fondo">
-        <div id="conjuntoCoche">
         <div id="coche"><img src="img/coche.png"></div>
-        <div id="humo"><img src="img/humo.gif"></div>
-        </div>
+        <div id="fuego"><img src="img/fuego.gif"></div>      
         <div id="pilar1"><img src="img/pilar.png"></div>
         <div id="pilar2"><img src="img/pilar.png"></div>
         <div id="escombros"><img src="img/escombros.png"></div>
         <div id="casaBlanca"><img src="img/casaBlanca.png"></div>
+        <div id="explosion"><img src="img/explosion.webp"></div>
+        <div id="sol"><img src="img/sol.webp"></div>
+        <div id="pajaro1"><img src="img/pajaro.gif"></div>
+        <div id="pajaro2"><img src="img/pajaro.gif"></div>
+        <div id="diglett1"><img src="img/diglett.png"></div>
+        <div id="diglett2"><img src="img/diglett.png"></div>
+        <div id="boton"><button onclick="llamar112()">Llamar 112</button></div>
         <div id="suelo"></div>
+        
     </div>
+    <audio id="sonidoAmbulancia" src="audio/ambulancia.mp3"></audio>
+    <script>
+        function llamar112() {
+    const audio = document.getElementById("sonidoAmbulancia");
+    audio.play();
+    alert("Llamando al 112...");
+}
+    </script>
 </body>
 </html>
