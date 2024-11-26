@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ángel Vaquero</title>
-    <link rel="stylesheet" href="linkedin.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ángel Vaquero - Perfil</title>
+  <link rel="stylesheet" href="linkedin.css">
 </head>
 <body>
-    <header>
-        <div class="banner">
+  <header class="header">
+    <div class="logo">LinkedIn</div>
+    <nav class="nav">
+      <a href="#">Artículos</a>
+      <a href="#">Personas</a>
+      <a href="#">Learning</a>
+      <a href="#">Empleos</a>
+      <a href="#">Juegos</a>
+    </nav>
+    <button class="login-button">Inicia sesión</button>
+  </header>
+  
+  <main class="main">
+    <div class="profile-section">
+      <div class="banner">
+        <img src="./banner.jpg" alt="Banner de Ángel Vaquero">
+      </div>
+      <div class="profile-details">
+        <div class="profile-picture-container">
+          <img src="./angel.jpg" alt="Foto de Ángel Vaquero" class="profile-picture">
         </div>
-    </header>
+        <div class="info">
+          <h1>Ángel Vaquero Toncheva</h1>
+          <p class="location">Logroño, La Rioja, España</p>
+          <p class="description">Desarrollador Back-end con habilidades en Big Data</p>
+          <p class="contact-info"><strong>Email:</strong> angelvaquerolarioja@gmail.com</p>
+          <p class="contact-info"><strong>GitHub:</strong> avaquerolarioja2004</p>
+          <div class="followers">
+            <span>2 mil seguidores · Más de 500 contactos</span>
+          </div>
+          <div class="buttons">
+            <button class="cta-button">Unirse para ver el perfil</button>
+            <button class="view-more">Enviar mensaje</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <main>
-        <section class="profile">
-            <img src="angel.jpg" alt="Ángel Vaquero">
-            <h2>Ángel Vaquero Toncheva</h2>
-            <p>Logroño, La Rioja, España</p>
-            <p>2 mil seguidores · Más de 500 contactos</p>
-            <button>Unirse para ver el perfil</button>
-            <button>Enviar mensaje</button>
-        </section>
-
-        <section class="courses">
-            <h3>Añade nuevas aptitudes con estos cursos:</h3>
-            <ul>
-                <li>
-                    <h4>Domina Scala</h4>
-                    <p>1h 19m</p>
-                </li>
-                <li>
-                    <h4>TypeScript: Trucos</h4>
-                    <p>1h 45m</p>
-                </li>
-                <li>
-                    <h4>Laravel práctico: API REST</h4>
-                    <p>3h 7m</p>
-                </li>
-            </ul>
-            <button>Ver todos los cursos</button>
-        </section>
-    </main>
+    <aside class="sidebar">
+      <h2>Añade nuevas aptitudes con estos cursos</h2>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/50" alt="Curso Scala">
+          <span>Domina Scala<br>1 h 19 m</span>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/50" alt="Curso TypeScript">
+          <span>TypeScript: Trucos<br>1 h 45 m</span>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/50" alt="Curso Laravel">
+          <span>Laravel práctico: API REST<br>3 h 7 m</span>
+        </li>
+      </ul>
+      <a href="#" class="view-more">Ver todos los cursos</a>
+    </aside>
+  </main>
 </body>
 </html>

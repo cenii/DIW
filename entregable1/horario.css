@@ -1,0 +1,20 @@
+body{
+    background-color: blueviolet;
+}
+th {
+    color: mediumpurple;
+    background-color: lightyellow;
+}
+td{
+    color: black;
+    background-color: lightskyblue;
+    font-family: helvetica;
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+/*
+Cada asignatura color unico columna overline fila underline 
+texto fondo negro texto blanco y en cursiva
+*/

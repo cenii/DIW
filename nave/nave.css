@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+img {
+    display: block;
+    width: 100%;
+}
+#fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(resources/fondoEspacio.jpg);
+    background-size: cover;
+}
+html, body {
+    height: 100%;
+}
+#fondo {
+    height: 100%;
+}
+#nave{
+    position: absolute;
+}
+#tierra{
+    left: 900px;
+    top: 250px;
+    position: absolute;
+    width: 150px;
+}
+#marte{
+    top:-130px;
+    left:-200px;
+    position: absolute;
+    width: 600px;
+}
+#satelite{
+    position: absolute;
+    width: 50px;
+    left: 900px;
+    top: 300px;
+}
+#asteroide1{
+    position: absolute;
+    width: 50px;
+}
+#asteroide2{
+    position: absolute;
+    width: 50px;
+}
+#asteroide3{
+    position: absolute;
+    width: 50px;
+}
+#hiperespacio{
+    position: absolute;
+    opacity: 0;
+}
+#boton{
+    position: absolute;
+    width: 170px;
+    left:660px;
+    top:520px;
+}
